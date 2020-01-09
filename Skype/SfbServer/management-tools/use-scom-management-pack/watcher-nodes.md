@@ -188,7 +188,9 @@ When this command completes and the trusted application is created, you must the
 Enable-CsTopology
 ```
 
-After running Enable-CsTopology, restart the computer.
+The watcher node computer account must also have access to query CMS in order to run certain synthetic transactions.  Add the watcher node computer account to the RTCUniversalReadOnlyAdmins group to grant these rights.
+
+Restart the computer.
   
 To verify that the new trusted application has been created, type the following at the Skype for Business Server Management Shell prompt:
   
