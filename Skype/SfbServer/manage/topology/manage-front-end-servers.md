@@ -18,6 +18,9 @@ description: "Summary: Learn how to add, remove, patch, or update Front End Serv
  
 This article explains how to add or remove Front End Servers and how to apply upgrades or patches to Front End Servers.
 
+  > [!NOTE]
+> Skype for Business Server 2019 does not support Enterprise Edition Front End pools with two Front End Servers, and will not allow the topology to be published.
+
 ## Add or remove Front End Servers
   
 When you add a Front End Server to a pool, or remove a Front End Server from a pool, you then need to restart the pool. 
@@ -47,7 +50,7 @@ You can use the following procedure when adding or removing a Front End Server.
   
   > [!NOTE]
 > Also, when you add or remove a server to the pool, you must run the Skype for Business Server Deployment Wizard on each computer added or removed, for more information, see [Install Skype for Business Server on servers in the topology](https://docs.microsoft.com/skypeforbusiness/deploy/install/install-skype-for-business-server)
-  
+
 4. If you have changed the number of servers in your Front End pool in any of the following ways, then reset the pool with by typing the following cmdlet: Reset-CsPoolRegistrarState -ResetType FullReset -PoolFqdn 
     
    ```PowerShell
